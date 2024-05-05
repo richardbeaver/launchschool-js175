@@ -15,7 +15,7 @@ html(lang="en-US")
       ul
         each messageType in messageTypes
           each message in flash[messageType]
-            li.flash(class=messageType)=message
+            li.flash(class=messageType)= message
 
     main
       block content
